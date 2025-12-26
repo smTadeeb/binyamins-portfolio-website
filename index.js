@@ -142,27 +142,27 @@ function translatePage(lang) {
     const expTitle = document.querySelector('.experience .section-title');
     if (expTitle) expTitle.innerHTML = translation.expTitle + ' <span>' + translation.expTitleSpan + '</span>';
 
-    const expCards = document.querySelectorAll('.experience-card');
-    if (expCards[0]) {
-        const h3 = expCards[0].querySelector('h3');
-        const company = expCards[0].querySelector('.experience-company');
-        const desc = expCards[0].querySelector('.experience-description');
+    const timelineItems = document.querySelectorAll('.timeline-item');
+    if (timelineItems[0]) {
+        const h3 = timelineItems[0].querySelector('h3');
+        const company = timelineItems[0].querySelector('.timeline-company');
+        const desc = timelineItems[0].querySelector('.timeline-description');
         if (h3) h3.textContent = translation.expJob1;
         if (company) company.innerHTML = '<span>📍</span> ' + translation.expCompany1;
         if (desc) desc.textContent = translation.expDesc1;
     }
-    if (expCards[1]) {
-        const h3 = expCards[1].querySelector('h3');
-        const company = expCards[1].querySelector('.experience-company');
-        const desc = expCards[1].querySelector('.experience-description');
+    if (timelineItems[1]) {
+        const h3 = timelineItems[1].querySelector('h3');
+        const company = timelineItems[1].querySelector('.timeline-company');
+        const desc = timelineItems[1].querySelector('.timeline-description');
         if (h3) h3.textContent = translation.expJob2;
         if (company) company.innerHTML = '<span>📍</span> ' + translation.expCompany2;
         if (desc) desc.textContent = translation.expDesc2;
     }
-    if (expCards[2]) {
-        const h3 = expCards[2].querySelector('h3');
-        const company = expCards[2].querySelector('.experience-company');
-        const desc = expCards[2].querySelector('.experience-description');
+    if (timelineItems[2]) {
+        const h3 = timelineItems[2].querySelector('h3');
+        const company = timelineItems[2].querySelector('.timeline-company');
+        const desc = timelineItems[2].querySelector('.timeline-description');
         if (h3) h3.textContent = translation.expJob3;
         if (company) company.innerHTML = '<span>📍</span> ' + translation.expCompany3;
         if (desc) desc.textContent = translation.expDesc3;
